@@ -14,4 +14,4 @@ Open 2 terminal
         npm run dev
 2. ### Terminal for client
         cd client
-        npm run dev
+        npm start
