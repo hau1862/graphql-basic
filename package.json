@@ -1,0 +1,27 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "GraphQL Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hau1862/graphql-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hau1862/graphql-test/issues"
+  },
+  "homepage": "https://github.com/hau1862/graphql-test#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.11.1",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20"
+  }
+}
