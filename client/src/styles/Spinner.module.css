@@ -9,7 +9,12 @@
 }
 
 .spinnerContainer {
-  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(222, 222, 222);
   display: flex;
   justify-content: center;
   align-items: center;

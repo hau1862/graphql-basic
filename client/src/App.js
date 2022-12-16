@@ -1,22 +1,22 @@
 import "./App.css";
 import MovieList from "./components/MovieList";
-import { useState, useEffect } from "react";
+import MovieDetail from "./components/MovieDetail";
 import Spinner from "./components/Spinner";
+import { useState } from "react";
+
 
 function App() {
-  const [movieList, setMovieList] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-
-  });
+  const [loadingSpinner, setLoadingSpinner] = useState(false);
+  const [movieId, setMovieId] = useState(0);
 
   return (
     <div className="App">
-      <div className="spinner-container" style={loading ? { display: "flex" } : { display: "none" }}>
-        <Spinner />
-      </div>
-      <MovieList movieList={movieList} />
+      <button type="button" onClick={() => {
+        setMovieId(0);
+      }}>Reset</button>
+      <Spinner isLoading={loadingSpinner} />
+      <MovieList setMovieId={setMovieId} setLoadingSpinner={setLoadingSpinner} />
+      <MovieDetail movieId={movieId} setLoadingSpinner={setLoadingSpinner} />
     </div>
   );
 }
